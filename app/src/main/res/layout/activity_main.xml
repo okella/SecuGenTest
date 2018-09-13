@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sergeymarkin.secugentest.MainActivity">
+
+    <Button
+        android:id="@+id/buttonCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Получить изображение"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageViewFingerprint"
+        android:layout_width="260dp"
+        android:layout_height="300dp"
+        android:layout_alignEnd="@+id/buttonCapture"
+        android:layout_below="@+id/buttonCapture"
+        app:srcCompat="?android:attr/fingerprintAuthDrawable" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageViewFingerprint"
+        android:layout_toEndOf="@+id/buttonCapture"
+        android:text="save" />
+
+    <Button
+        android:id="@+id/led"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="led" />
+
+    <Button
+        android:id="@+id/print_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/save"
+        android:layout_alignParentEnd="true"
+        android:text="Print" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/typeList"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageViewFingerprint" />
+
+</RelativeLayout>

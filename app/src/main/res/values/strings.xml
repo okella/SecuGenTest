@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SecuGenTest</string>
+    <string-array name="typeList">
+        <item>SG400</item>
+        <item>ANSI378</item>
+        <item>ISO197942</item>
+    </string-array>
+</resources>
